@@ -1,0 +1,173 @@
+body{    
+    margin: 0px;
+    padding: 0px;
+    /* background-color: #f5f5f5; */
+    background-color: #def3ff;
+
+    font-family: Courier;
+    /* color: #213766; */    
+}
+
+h1{
+  font-size: 60px;
+}
+
+h2{
+  font-size: 45px;
+}
+h5{
+  font-size: 30px;
+}
+p{
+  font-size: 25px;
+}
+
+
+.smallintro, .footbar{
+    margin: 30px;
+    border-style: solid;
+    border-width: 5px;
+    
+}
+
+.smallintroinside{
+    padding-left: 30px; 
+    padding-right: 30px;
+
+    padding-top: 115px; /*how to make padding top n bottom depend on screen?*/
+    padding-bottom: 115px;
+
+    margin: 5px;
+    border-width: 2px;
+    border-style: solid;
+
+    text-align: center;
+}
+
+.footbarinside{
+  padding: 20px 30px 20px 30px;
+  margin: 5px;
+    border-width: 2px;
+    border-style: solid;
+
+    text-align: center;
+}
+
+
+
+
+
+
+.parentz{
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.thetabback{
+  margin: 0px 30px 0px 30px;
+  border-style: solid;
+  border-width: 0px 5px 5px 5px;
+  /* background-color: white; */
+  border-color: black;
+  position: relative;
+  left: 12px;
+
+}
+
+.thetabfront{
+  margin: 0px 30px 0px 30px;
+  border-style: solid;
+  border-width: 0px 5px 5px 5px;
+  /* background-color: white; */
+  border-color: black;
+
+  position: absolute;
+  top: -12px;
+}
+
+.titletab{
+  color: #def3ff;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: black;
+}
+
+.animate{
+  transform: translateY(+1100px);
+}
+
+.titlez{
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid #def3ff; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: 0.1em;
+  animation: 
+    typing 3.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+
+}
+
+.contentz{
+  padding: 20px 40px 20px 40px;
+  background-color: white;
+}
+
+
+.mypic{
+  max-width: 500px;
+}
+
+.mypicdiv{
+  text-align: center;
+}
+
+
+
+.iconbtn{
+  text-decoration: none;
+  font-size: 40px;
+  color: black;
+
+  border: 5px solid black;
+  border-radius: 50%;
+  padding: 20px;
+
+  margin: 0px 25px 0px 25px;
+}
+
+.iconbtn:hover{
+  background-color: black;
+  color: #def3ff;
+  text-decoration: none;
+  transition: 0.3s;
+}
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: black; }
+  }
+
+.scrollingbanner{
+  animation: bannerloop 20s linear infinite;
+  background-image: url("bannerz.png");
+  background-repeat: repeat-x;
+}
+
+@keyframes bannerloop{
+  0%{
+    margin-left: 0px;
+  }
+  100%{
+    margin-left: -3126px;
+  }
+}
